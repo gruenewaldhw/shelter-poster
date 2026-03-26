@@ -1,0 +1,238 @@
+@font-face {
+    font-family: '243GA__';
+    src: url('fonts/243GA__.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BrunoAce-Regular';
+    src: url('fonts/BrunoAce-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: auto;     
+    overflow-y: auto;     
+    background-color: #000;
+}
+
+body {
+    background-image: url("Assets/space-bg.png");
+    background-size: 1650px 3446px; 
+    background-repeat: no-repeat;
+    background-position: left top;
+    min-width: 1650px;   
+    min-height: 3446px;
+    max-width: 1650px;   
+    max-height: 3446px;             
+}
+
+.gradient {
+    position: absolute;
+    top: 0;
+    left: 0;                    
+    width: 1650px;            
+    height: auto;               
+    z-index: 1;
+}
+
+.ship {
+    position: absolute;
+    top: 1100px;         
+    left: 450px;        
+    width: 800px;       
+    height: auto;
+    z-index: 2;
+}
+
+.sato {
+    position: absolute;
+    z-index: 4;
+    top: 2980px;
+    left: 1250px;
+    width: 300px;
+    height: auto;
+}
+.sato:hover {
+    animation: spin .4s ease-in-out;
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1650px;
+    height: 3446px;
+    z-index: 3;
+    color: #00ff06;
+    font-family: sans-serif;
+    pointer-events: none;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3446px;
+    position: relative;
+}
+
+h1 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    top: -80px;
+    right: -50px;
+    font-size: 50px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    letter-spacing: 12px;
+    background-color: rgba(0, 0, 0, 0.4);   
+    padding: 140px 100px;                        
+    border-radius: 8px;                      
+    box-shadow: 0 0 25px rgba(0, 255, 6, 0.3);
+}
+
+h2 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    top: 500px;
+    right: 30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.verse1 {
+    font-family: 'BrunoAce-Regular', sans-serif;
+    position: absolute;
+    font-size: 28px;
+    top: 350px;
+    left: 60px;
+    line-height: 1.45;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px 35px;
+}
+
+.chorus {
+    font-family: 'BrunoAce-Regular', sans-serif;
+    position: absolute;
+    font-size: 38px;
+    top: 1260px;
+    left: 570px;
+    line-height: 1.35;
+    text-align: center;
+}
+
+.verse2 {
+    font-family: 'BrunoAce-Regular', sans-serif;
+    position: absolute;
+    font-size: 28px;
+    top: 2460px;
+    right: 60px;
+    line-height: 1.45;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 25px 35px;
+}
+
+.summary {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 24px;
+    padding: 60px;
+    bottom: 90px;
+}
+
+.melody1 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 780px;
+    left: 450px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody2 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 900px;
+    left: 1100px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody3 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 1120px;
+    left: 150px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody4 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 1800px;
+    left: 240px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody5 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 2000px;
+    left: 500px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody6 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 2100px;
+    left: 900px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+.melody7 {
+    font-family: '243GA__', sans-serif;
+    position: absolute;
+    font-size: 22px;
+    top: 1950px;
+    left: 1250px;
+    text-shadow: 0 0 4px black, 0 0 4px black;
+}
+
+nav ul {
+    font-family: '243GA__', sans-serif;
+    font-size: 48px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    z-index: 4;
+    pointer-events: auto;
+    list-style-type: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
+  text-decoration: none;
+}
